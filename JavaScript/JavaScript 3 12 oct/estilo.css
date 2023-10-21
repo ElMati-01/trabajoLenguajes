@@ -1,0 +1,9 @@
+div#respuesta{
+   display: none; 
+ } 
+    .caja{
+        width: 280px;
+        height: 80px;
+        position: sticky;
+        top:  30px;
+    }

@@ -1,0 +1,15 @@
+
+div#respuesta{
+   display: none; 
+ } 
+    .caja{
+        width: 280px;
+        height: 10px;
+        position: sticky;
+        top:  30px;
+        display: flex;
+    }
+
+.body{
+  background: -webkit-linear-gradient(25deg, #ffff49 0, #ffff35 16.67%, #fff923 33.33%, #f8d110 50%, #d8ab00 66.67%, #ba8900 83.33%, #9d6b00 100%);
+}    
