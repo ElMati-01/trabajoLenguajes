@@ -14,7 +14,16 @@ for i in range (1,31):
 print(f"Listado aprendices: {aprendices}")
 print(f"Listado edades: {edades}")
 
+
+
+
+
 ########################################### Segunda forma ####################################
+
+
+
+
+
 
 # Se ingresa los datos necesarios.
 datoAprendiz = input("Ingrese su nombre: ")

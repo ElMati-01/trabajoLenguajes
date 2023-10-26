@@ -3,9 +3,10 @@ aprendices = ['Sebastian Tovar', 'Juan Mahecha', 'Maria Buenaventura', 'Mathew G
 edades = [17, 17, 17, 17, 17, 17, 17, 18, 17, 17, 17, 18, 23, 18, 18, 19, 18, 17, 18, 17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18]
 
 # Aquí se usa la función max para determinar la edad 
-edadMax=max(edades)
+edadMax=edades.index(max(edades))
+edadMax2= max(edades)
 
-print (f"El estudiante con mayor tiene {edadMax} años.")
+print (f"El estudiante con mayor edad es {aprendices[edadMax]} y tiene {edadMax2} años.")
 
 
 
