@@ -1,13 +1,13 @@
-# # Modificando parámetros mutables
+# Modificando parámetros mutables
 
-# # Aquí vemos que se crea una función donde hay un argumento y un resultado, cada argumento estará almacenado en "result"
-# def lista(arg, result=[]):
+# Aquí vemos que se crea una función donde hay un argumento y un resultado, cada argumento estará almacenado en "result"
+def lista(arg, result=[]):
 
-#     result.append(arg)
+    result.append(arg)
 
-#     print(result)
-# # Aquí se imprime los argumentos dados y los almacenados
-# lista('domingo', [])
+    print(result)
+# Aquí se imprime los argumentos dados y los almacenados
+lista('domingo', [])
 
 
 
