@@ -1,24 +1,20 @@
 
 #Agregar dispositivos
 
-def agregarEquipo(equipos, ID, dispositivo):
+equipos= {}
 
+#Agregar equipo
 
-  equipos.setdefault(ID, {})
-  equipos[ID] = {"id": ID, "dispositivo":dispositivo, "novedad": []}
-  return equipos
+def agregarEquipo():
+  ID = int(input("Ingrese un ID: "))
+  dispositivo = input("Ingrese dispositivo: ")
 
-equipos = {}
+  if ID not in equipos or dispositivo not in equipos:
 
-equipo1 = {'id': 1, 'cargador': 'HP', 'mouse': 'Logitech'}
-equipo2 = {'id': 2, 'cargador': 'Dell', 'mouse': 'Razer'}
-
-equipos = agregarEquipo(equipos, 1, equipo1)
-equipos = agregarEquipo(equipos, 2, equipo2)
-
-for id, dispositivo in equipos.items():
-
-  print(f"dispositivo: {dispositivo}")
+    equipos[ID] = {"id": ID, "dispositivo":dispositivo, "novedad": []}
+  
+  else:
+    print("Ya se encuentra en la base de datos")
 
 # Agregar novedad
 
@@ -47,3 +43,23 @@ def buscar():
 # Buscar productos con novedades
 
 def consultarNovedad():
+   novedades= [ID for ID, equipos in equipos.items() if equipos['novedad']]
+   if novedades:
+        
+        for ID in novedades:
+            equipos = equipos[ID]
+            print(f"{equipos}")
+
+            for novedad in equipos['novedad']:
+                print(f"Fecha: {novedad['fecha']}, Descripción: {novedad['descripcion']}")
+
+# Eliminar equipo
+
+def eliminar():
+    ID = input("Ingresa ID delequipo que desea eliminar: ")
+    if ID in equipos:
+        del equipos[ID]
+        print("Se ha eliminado")
+    else:
+        print("Equipo no encontrado")
+
