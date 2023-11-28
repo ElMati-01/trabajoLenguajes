@@ -47,10 +47,7 @@ const platos = {
     const plato = platos[plato1];
     const bebida = bebidas[bebida1];
   
-    if (!plato && !bebida) {
-      alert("Error: Plato o bebida no encontrada.");
-      return;
-    }
+
 
 // Se crea una formula que ayude a imprimir el total del pedido
     const precioPlato = plato.precio;
