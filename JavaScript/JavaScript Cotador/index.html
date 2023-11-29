@@ -14,7 +14,7 @@
     <div class="container">
         <br>
         <br>
-        <div class="row">
+        <div class="">
             <h3>Articulos totales y su precio</h3>
             <br>
             <br>
@@ -22,61 +22,87 @@
             <br>
             <br>
             <h4>Libro Js completo</h4>
-            
+            <br>
             <figure>
+                <br>
                 <img src="img/los-mejores-libros-para-aprender-javascript.jpg">
+                <br>
                 <figcaption> JavaScript experto
                     <br>
                     <br> Precio: 39,000$
 
                 </figcaption>
             </figure>
+            <br>
+            <h5>Total de compra</h5>
+            <br>
             <h2 style="text-align: center;"> <span id="valor">0</span> </h2>
 
-            <button type="button" id="incrementar" class="btn-success col" onclick="incremento()">
-                + 
-            </button>
+            <div class="row">
+                <button type="button" id="incrementar" class="btn-success col" onclick="incremento()">
+                    + 
+                </button>  
 
-            <br>
+                <br>
 
-            <button type="button" id="decrementar" class="btn-danger col" onclick="decremento()">
-                - 
-            </button>
- 
+                <button type="button" id="decrementar" class="btn-danger col" onclick="decremento()">
+                    - 
+                </button>
+            </div>
         </div>
+        <br>
+        <br>
 
-        <div class="row">
-            <p></p>
+        <div class="">
+            <br>
+            <br>
+            <h4>Libro Python completo</h4>
+            <br>
             <figure>
+                <br>
                 <img src="img/Introd_Programac_PYTHON-scaled.jpg">
+                <br>
                 <figcaption> Python experto
                     <br>
                     <br> Precio: 56,900$
 
                 </figcaption>
             </figure>
+            <br>
+            <h5>Total de compra</h5>
+            <br>
             <h2 style="text-align: center;"> <span id="valor1">0</span> </h2>
 
-            <button type="button" id="incrementar1" class="btn-success col" onclick="incremento1()">
-                + 
-            </button>
+            <div class="row">
+                <button type="button" id="incrementar1" class="btn-success col" onclick="incremento1()">
+                    + 
+                </button>
 
-            <br>
+                <br>
 
-            <button type="button" id="decrementar1" class="btn-danger col" onclick="decremento1()">
-                - 
-            </button>
- 
+                <button type="button" id="decrementar1" class="btn-danger col" onclick="decremento1()">
+                    - 
+                </button>
+            </div>
         </div>
         <br>
 
-        <button type="button" onclick="resetear()" id="resetear" class="btn btn-outline-danger col">
+        <button type="button" onclick="resetear()" id="resetear" class="btn-danger col">
             <i class="fas fa-broom"></i>
         </button>
+        <br>
+        <br>
+            <button onclick="Mostrar()" class="btn-outline-dark">Calcular</button>
+        <br>
+        <br>
+        <div class="alert alert-warning alert_dismissible fade show" role="alert" id="respuesta">
+            <strong id="resultado"></strong>
 
-
+        </div>
 
     </div>
+    <br>
+    <br>
     <script src="./contador.js"></script>
 </body>
 </html>

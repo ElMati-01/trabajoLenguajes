@@ -1,5 +1,8 @@
 body {
     background-image: url(img/Many_Book_Library_468620.jpg);
+
+
+
 }
 
 h1{
@@ -43,13 +46,15 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 220px;
+    max-width: 500px;
     margin: auto;
 }
 
 img {
     max-width: 500px;
-    max-height: 500px;
+    max-height: 600px;
+
+
 }
 
 figcaption {
@@ -59,3 +64,17 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
+
+h5{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255)
+}
+
+strong{
+    text-align: center;
+}
+
+
