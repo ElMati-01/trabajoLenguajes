@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS CreateElement Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=ComicSans" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body >
+    <h1>Tienda virtual de libros</h1>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row">
+            <h3>Articulos totales y su precio</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Libro Js completo</h4>
+            
+            <figure>
+                <img src="img/los-mejores-libros-para-aprender-javascript.jpg">
+                <figcaption> JavaScript experto
+                    <br>
+                    <br> Precio: 39,000$
+
+                </figcaption>
+            </figure>
+            <h2 style="text-align: center;"> <span id="valor">0</span> </h2>
+
+            <button type="button" id="incrementar" class="btn-success col" onclick="incremento()">
+                + 
+            </button>
+
+            <br>
+
+            <button type="button" id="decrementar" class="btn-danger col" onclick="decremento()">
+                - 
+            </button>
+ 
+        </div>
+
+        <div class="row">
+            <p></p>
+            <figure>
+                <img src="img/Introd_Programac_PYTHON-scaled.jpg">
+                <figcaption> Python experto
+                    <br>
+                    <br> Precio: 56,900$
+
+                </figcaption>
+            </figure>
+            <h2 style="text-align: center;"> <span id="valor1">0</span> </h2>
+
+            <button type="button" id="incrementar1" class="btn-success col" onclick="incremento1()">
+                + 
+            </button>
+
+            <br>
+
+            <button type="button" id="decrementar1" class="btn-danger col" onclick="decremento1()">
+                - 
+            </button>
+ 
+        </div>
+        <br>
+
+        <button type="button" onclick="resetear()" id="resetear" class="btn btn-outline-danger col">
+            <i class="fas fa-broom"></i>
+        </button>
+
+
+
+    </div>
+    <script src="./contador.js"></script>
+</body>
+</html>

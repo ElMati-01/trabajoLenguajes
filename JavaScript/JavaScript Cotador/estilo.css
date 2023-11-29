@@ -1,0 +1,61 @@
+body {
+    background-image: url(img/Many_Book_Library_468620.jpg);
+}
+
+h1{
+
+    text-align: center;
+     color:rgb(0, 0, 0);
+     background-color: brown;
+     padding: 0px 10px 20px 30px;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     -webkit-text-stroke: 1px;
+     -webkit-text-stroke-color: rgba(255, 0, 0, 0.87)
+    
+
+     
+ }
+ 
+h3{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white
+}
+
+h4{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white
+}
+
+span{
+    color: rgb(0, 0, 0);
+    background-color: rgb(194, 187, 187);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0)
+}
+
+figure {
+    border: thick #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+figcaption {
+    background-color: #a6dde7;
+    color: #000000;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
