@@ -28,7 +28,7 @@ window.addEventListener("keydown", (e)=> {
 function incremento(){
 
     contador1+=1
-    valor.innerHTML=contador1 * 39900
+    valor.innerHTML=new Intl.NumberFormat('es-CO',{ style: 'currency', currency: 'COP' }).format(contador1 * 39900);
 }
 
 // Función para decrementar contador (Se multiplica en vez de dividirse. La multiplicación del precio se agrega en este caso a "contador1" para que el contador reste todos los nuemros por el precio indicado)
@@ -36,7 +36,7 @@ function decremento(){
 
     if (contador1>0){
     contador1-=1
-    valor.innerHTML=contador1 * 39900
+    valor.innerHTML=new Intl.NumberFormat('es-CO',{ style: 'currency', currency: 'COP' }).format(contador1 * 39900);
     }
 
     else{
@@ -65,7 +65,7 @@ window.addEventListener("keydown", (e)=> {
 function incremento1(){
 
     contador2+=1
-    valor1.innerHTML=contador2 * 56900
+    valor1.innerHTML= new Intl.NumberFormat('es-CO',{ style: 'currency', currency: 'COP' }).format(contador2 * 56900);
 }
 
 
@@ -74,7 +74,7 @@ function decremento1(){
 
     if (contador2>0){
     contador2-=1
-    valor1.innerHTML=contador2 * 56900
+    valor1.innerHTML=new Intl.NumberFormat('es-CO',{ style: 'currency', currency: 'COP' }).format(contador2 * 56900);
     }
 
     else{
@@ -89,8 +89,8 @@ function resetear(){
 
     contador1=0
     contador2 = 0
-    valor.innerHTML=contador1
-    valor1.innerHTML= contador2
+    valor.innerHTML=new Intl.NumberFormat('es-CO',{ style: 'currency', currency: 'COP' }).format(contador1);
+    valor1.innerHTML= new Intl.NumberFormat('es-CO',{ style: 'currency', currency: 'COP' }).format(contador2);
 
 }
 
@@ -99,7 +99,7 @@ function calcularTotal(){
     const precioTotal= (contador1 * 39900) + (contador2 * 56900);
 
     const resultado = document.getElementById("resultado");
-    resultado.innerHTML = `Total: ${precioTotal}`;
+    resultado.innerHTML = `El precio total: ${precioTotal}`;
     
 }
 

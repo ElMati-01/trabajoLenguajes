@@ -10,7 +10,7 @@ h1{
     text-align: center;
      color:rgb(0, 0, 0);
      background-color: brown;
-     padding: 0px 10px 20px 30px;
+     padding: 10px 10px 20px 30px;
      font-family:Georgia, 'Times New Roman', Times, serif;
      -webkit-text-stroke: 1px;
      -webkit-text-stroke-color: rgba(255, 0, 0, 0.87)
@@ -37,28 +37,28 @@ span{
     color: rgb(0, 0, 0);
     background-color: rgb(194, 187, 187);
     font-family:Georgia, 'Times New Roman', Times, serif;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0)
 }
 
 figure {
-    border: thick #c0c0c0 solid;
+    border: 10px #000000 solid;
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 500px;
+    padding: 20px;
+    max-width: 450px;
     margin: auto;
 }
 
 img {
-    max-width: 500px;
-    max-height: 600px;
+    max-width: 450px;
+    max-height: 750px;
 
 
 }
 
 figcaption {
-    background-color: #a6dde7;
+    background-color: #04d6fc;
     color: #000000;
     font: italic smaller sans-serif;
     padding: 3px;
