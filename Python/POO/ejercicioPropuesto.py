@@ -116,6 +116,7 @@ if confirmacion.upper() == "SI":
 
         elif x == 2:
             novedad()
+            
 
         elif x == 3:
             buscar()
