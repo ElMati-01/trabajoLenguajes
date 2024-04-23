@@ -1,0 +1,16 @@
+body{
+    background-color: rgba(255, 255, 0, 0.705);
+}
+
+div{
+    align-content: center;
+}
+
+p{
+    color: rgb(83, 83, 83);
+}
+
+button{
+    margin: 5px;
+    background-color: rgb(109, 109, 28);
+}
